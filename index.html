@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merrick Mama Bakes | Nostalgic Treats Made Cleaner & Sourdough</title>
+  <meta name="description" content="Small-batch, slow-fermented artisan sourdough breads, nostalgic toaster pastries, and cleaner sweet bakes handmade by Nicole in Merrick, Long Island, NY.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- Gentle Top Notice -->
+  <aside class="announcement-bar">
+    <div class="container announcement-inner">
+      <div class="announcement-text">
+        <strong>Weekly Bake Drop:</strong> Orders open for this weekend’s bake. Porch pickup in Merrick, NY.
+      </div>
+      <div class="announcement-right">
+        <a href="#workshops">Kitchen Workshops</a>
+        <a href="#pickup">Pickup Hours</a>
+        <a href="mailto:nicoleycrites@hotmail.com">nicoleycrites@hotmail.com</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation -->
+  <header class="site-nav">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand">
+        <img src="images/logo.png" alt="Merrick Mama Bakes Logo" class="nav-logo">
+        <div class="nav-brand-text">
+          <h1>Merrick Mama Bakes</h1>
+          <p>Made by a Mama for Your Family</p>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#menu">The Bakery Menu</a>
+        <a href="#buttermilk">Buttermilk Sourdough</a>
+        <a href="#workshops">Workshops</a>
+        <a href="#philosophy">Our Flour & Sourdough</a>
+        <a href="#about">About Nicole</a>
+        <a href="#pickup">Porch Pickup</a>
+      </nav>
+
+      <div class="nav-actions-group">
+        <button class="cart-toggle-btn" id="cart-toggle" aria-label="Open Bread Bag">
+          <span>Bread Bag</span>
+          <span class="cart-qty-pill" id="cart-pill">0</span>
+        </button>
+        <button class="menu-mobile-btn" aria-label="Toggle Navigation" onclick="document.getElementById('mobile-drawer').classList.toggle('open')">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer">
+      <a href="#menu" onclick="document.getElementById('mobile-drawer').classList.remove('open')">The Bakery Menu</a>
+      <a href="#buttermilk" onclick="document.getElementById('mobile-drawer').classList.remove('open')">Buttermilk Sourdough</a>
+      <a href="#workshops" onclick="document.getElementById('mobile-drawer').classList.remove('open')">Kitchen Workshops</a>
+      <a href="#philosophy" onclick="document.getElementById('mobile-drawer').classList.remove('open')">Our Flour & Sourdough</a>
+      <a href="#about" onclick="document.getElementById('mobile-drawer').classList.remove('open')">About Nicole</a>
+      <a href="#pickup" onclick="document.getElementById('mobile-drawer').classList.remove('open')">Porch Pickup & Ordering</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: EDITORIAL, AIRY & WARM -->
+    <section class="hero-editorial">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <div class="hero-script-lead">
+            <span class="handwritten">From my kitchen to your family table</span>
+          </div>
+
+          <h2 class="hero-main-title">
+            Your favorite nostalgic treats, <em>made cleaner & sourdough.</em>
+          </h2>
+
+          <p class="hero-narrative">
+            Remember the comforting tastes of childhood — warm toaster pastries, soft sandwich bread that made the perfect PB&J, and sweet cinnamon rolls on Saturday mornings? 
+            Here in Merrick, we slow things down: 36-hour wild sourdough fermentation, organic flours, grass-fed butter, and real fruit. Nostalgic comfort, without the seed oils, preservatives, or belly bloat.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#menu" class="btn-warm">Browse Fresh Bakes</a>
+            <a href="#workshops" class="btn-subtle">Book a Workshop with Nicole</a>
+          </div>
+
+          <div class="hero-signature-strip">
+            <span>• 36-Hour Wild Ferment</span>
+            <span>• Organic NY & King Arthur Flours</span>
+            <span>• Gentle on Digestion</span>
+          </div>
+        </div>
+
+        <div class="hero-photo-frame">
+          <img src="images/hero-spread.jpg" alt="Artisan sourdough loaf and buttermilk sandwich bread on floured table" class="hero-photo">
+          <div class="hero-photo-caption">
+            <div>
+              <div class="hero-caption-text">Freshly Baked Every Weekend</div>
+              <div class="hero-caption-sub">Small-batch porch pickup in Merrick, NY</div>
+            </div>
+            <a href="#menu" class="btn-text-link">Order Bakes →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GENTLE PHILOSOPHY: 3 SIMPLE PILLARS -->
+    <section class="philosophy-strip">
+      <div class="container">
+        <div class="philosophy-grid">
+          <div class="philosophy-item">
+            <h3>🌾 36-Hour Patience</h3>
+            <p>
+              We never use commercial fast yeast or chemical dough conditioners. Our loaves cold-ferment for up to 36 hours, naturally breaking down gluten and phytic acid so bread is kind to your stomach.
+            </p>
+          </div>
+
+          <div class="philosophy-item">
+            <h3>🍓 Nostalgia Made Honest</h3>
+            <p>
+              We love childhood comfort food, but grocery store versions are full of high-fructose corn syrup and palm oil. We handcraft them with pasture butter, real organic fruits, and flaky sourdough pastry.
+            </p>
+          </div>
+
+          <div class="philosophy-item">
+            <h3>🏡 Small-Batch Micro-Bakery</h3>
+            <p>
+              Baked in small, intentional batches in Nicole’s home kitchen. Pulled warm from the oven on Friday and Saturday mornings, ready for local Merrick porch pickup.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE SPOTLIGHT: THE BUTTERMILK SOURDOUGH -->
+    <section class="feature-spotlight" id="buttermilk">
+      <div class="container">
+        <div class="spotlight-wrap">
+          <div class="spotlight-img-col">
+            <img src="images/buttermilk-sandwich-loaf.jpg" alt="Sliced Buttermilk Sourdough Sandwich Loaf with melting butter">
+          </div>
+
+          <div class="spotlight-text-col">
+            <span class="eyebrow">Nicole’s Signature Bake</span>
+            <h2 class="heading-section">A Little Love for the Buttermilk Sourdough</h2>
+            
+            <p class="quote-nicole">
+              “Soft inside with a golden crust and that little sourdough tang we love!”
+            </p>
+
+            <p>
+              Most artisan sourdough loaves have a thick, crunchy crust that young children find tough to chew for everyday sandwiches. We solved that by folding cultured whole buttermilk directly into our wild-fermented dough. 
+              The lactic acids yield a cloud-soft, tender crumb that squishes just right for peanut butter and honey, yet toasts to golden perfection for Sunday morning grilled cheese.
+            </p>
+
+            <div class="spotlight-simple-facts">
+              <div>
+                <strong>36 Hours</strong>
+                <span>Cold Ferment</span>
+              </div>
+              <div>
+                <strong>Whole Buttermilk</strong>
+                <span>Pillowy Crumb</span>
+              </div>
+              <div>
+                <strong>$12.00</strong>
+                <span>Fresh Loaf</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap;">
+              <button class="btn-warm" onclick="addToBag('buttermilk-sourdough')">
+                Add to Bread Bag ($12)
+              </button>
+              <button class="btn-subtle" onclick="openDetailsModal('buttermilk-sourdough')">
+                View Ingredients & Care
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE BAKERY MENU -->
+    <section class="bakery-menu-section" id="menu">
+      <div class="container">
+        <div class="menu-intro-center">
+          <span class="eyebrow">Cottage Bakes</span>
+          <h2 class="heading-section">The Weekly Menu</h2>
+          <p class="lead-p" style="margin: 0 auto;">
+            Hand-shaped, slow-proofed, and baked fresh for every weekend drop. Choose whole or sliced loaves, nostalgic treats, and sweet weekend bakes.
+          </p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="menu-nav-tabs">
+          <button class="menu-tab-btn active" data-cat="all">All Bakes (8)</button>
+          <button class="menu-tab-btn" data-cat="breads">Artisan Loaves</button>
+          <button class="menu-tab-btn" data-cat="treats">Nostalgic Pastries</button>
+          <button class="menu-tab-btn" data-cat="sweets">Sweet Rolls & Cookies</button>
+          <button class="menu-tab-btn" data-cat="savory">Savory & Focaccia</button>
+          <button class="menu-tab-btn" data-cat="supplies">Starter Kits</button>
+        </div>
+
+        <!-- Editorial Menu Grid (Rendered by app.js) -->
+        <div class="menu-editorial-grid" id="menu-container">
+          <!-- Populated by JavaScript -->
+        </div>
+
+        <div style="text-align: center; margin-top: 52px; padding: 28px; background-color: #FFFFFF; border-radius: var(--radius-card); border: 1px dashed var(--border-soft);">
+          <p style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--text-dark); margin-bottom: 6px;">
+            Planning a baby shower, birthday brunch, or teacher appreciation morning?
+          </p>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">
+            Nicole bakes custom cinnamon roll wreaths, nostalgic pastry boxes, and celebration babkas for local Long Island gatherings.
+          </p>
+          <button class="btn-subtle" onclick="openInquiryModal()">Inquire About a Custom Bake</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOURDOUGH WORKSHOPS (Warm gathering invitation) -->
+    <section class="workshops-section" id="workshops">
+      <div class="container">
+        <div class="workshops-intro-row">
+          <div>
+            <span class="eyebrow">Kitchen Gatherings</span>
+            <h2 class="heading-section">Bake Sourdough Around Nicole’s Table</h2>
+            <p class="lead-p">
+              Sourdough can feel intimidating when you are reading contradictory guides online. In these intimate, hands-on masterclasses (strictly limited to 8 bakers), Nicole walks you through every step in her sunny Merrick kitchen. You’ll touch the dough, learn tension shaping, understand fermentation timing, and leave with your own banneton of proofed dough to bake at home.
+            </p>
+            <div style="margin-top: 20px; font-size: 0.88rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 6px;">
+              <span>✓ Includes active jar of Nicole’s 4-year starter "Mabel"</span>
+              <span>✓ Cane banneton proofing basket & scoring razor included</span>
+              <span>✓ Warm sourdough tasting lunch with compound butters</span>
+            </div>
+          </div>
+
+          <div>
+            <img src="images/sourdough-workshop.jpg" alt="Hands-on sourdough bread making workshop in Nicole's kitchen" class="workshops-intro-photo">
+          </div>
+        </div>
+
+        <!-- 3 Workshops Cards -->
+        <div class="workshop-invitation-list" id="workshops-list">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- A MAMA'S NOTE ON SOURDOUGH & DIGESTION (Heartfelt letter, NOT a SaaS matrix) -->
+    <section class="letter-section" id="philosophy">
+      <div class="container">
+        <article class="letter-frame">
+          <span class="eyebrow">A Note from Nicole</span>
+          <h2 class="letter-title">Why We Slow Down for 36 Patient Hours</h2>
+          
+          <div class="letter-body">
+            <p>
+              In the 1960s, commercial breadmaking made a drastic turn toward speed. Fast-rising chemical yeast replaced patient fermentation, allowing industrial factories to turn wheat flour into bagged loaves in 90 minutes flat. But speed came at a steep cost: our digestive systems never had time to handle the unfermented proteins and anti-nutrients.
+            </p>
+            
+            <p>
+              When flour and water mingle with wild lactobacillus bacteria over 24 to 36 hours of cold fermentation, something miraculous happens: the bacteria pre-digest complex gluten peptide bonds, break down phytic acid (which normally blocks mineral absorption), and lower the glycemic index of the grain.
+            </p>
+
+            <div class="letter-callout-grid">
+              <div class="letter-callout-box">
+                <h4>Gentle on the Belly</h4>
+                <p>Many of our neighbors with non-celiac gluten sensitivity tell us they can eat our sourdough every single day without the bloating or heaviness of store bread.</p>
+              </div>
+              <div class="letter-callout-box">
+                <h4>No Seed Oils or Chemical Relaxers</h4>
+                <p>We use exclusively grass-fed European cultured butter, extra virgin olive oil, and organic flours. You will never find soybean oil, high-fructose corn syrup, or artificial food dyes in our kitchen.</p>
+              </div>
+            </div>
+
+            <p>
+              It takes us three days to make each batch of bread and toaster pastries. It is more work, but when you share a slice with your family on a Sunday morning, you can taste the patience and honest love in every bite.
+            </p>
+          </div>
+
+          <div class="letter-signoff">
+            <div>
+              <div class="letter-mama-sig">Nicole Crites</div>
+              <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); font-weight: 600;">Mama & Baker • Merrick, NY</div>
+            </div>
+            <a href="#menu" class="btn-text-link">Reserve Your Weekend Loaf →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- MEET NICOLE -->
+    <section class="about-nicole-section" id="about">
+      <div class="container about-nicole-grid">
+        <div>
+          <img src="images/baker-mama.jpg" alt="Nicole holding a warm loaf of fresh sourdough bread in her home kitchen" class="about-nicole-photo">
+        </div>
+
+        <div class="about-nicole-text">
+          <span class="eyebrow">The Baker’s Story</span>
+          <h2 class="heading-section">“Made by a mama, for your family.”</h2>
+          
+          <p>
+            Hi, I’m Nicole! Merrick Mama Bakes grew out of my desire to feed my own kids real, nourishing food. Standing in grocery store aisles reading long ingredient lists full of unpronounceable stabilizers and synthetic dough conditioners made me realize how far modern bread had drifted from genuine food.
+          </p>
+
+          <p>
+            I missed the nostalgic comfort treats of growing up — warm cinnamon rolls, golden sandwich bread, and toaster pastries — but I wanted them made with ingredients I could be proud of. Four years ago, my sourdough starter “Mabel” was born. What started as weekend baking for my family quickly turned into neighbors knocking on our door asking for loaves.
+          </p>
+
+          <p>
+            When you pick up a warm paper bag from our porch in Merrick, you are getting food made with the exact same care and uncompromised ingredients I feed my own children. Thank you for welcoming our bakes to your family table.
+          </p>
+
+          <div style="margin-top: 28px;">
+            <a href="https://www.facebook.com/people/Merrick-Mama-Bakes/61568819002395/" target="_blank" rel="noopener noreferrer" class="btn-subtle">
+              Join Our Facebook Community (250+ Neighbors)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEEKLY PORCH PICKUP & ORDERING RHYTHM -->
+    <section class="pickup-rhythm-section" id="pickup">
+      <div class="container">
+        <div class="pickup-rhythm-box">
+          <div>
+            <span class="eyebrow">Porch Pickup in Merrick, NY</span>
+            <h2 class="heading-section" style="font-size: 2rem;">How the Weekly Bake Works</h2>
+            <p style="font-size: 0.94rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 24px;">
+              Because true wild sourdough takes 36 hours of patient fermentation, we bake to order every week.
+            </p>
+
+            <div class="pickup-step-row">
+              <div class="pickup-step-item">
+                <span class="pickup-step-num">1</span>
+                <div class="pickup-step-info">
+                  <h4>Monday – Wednesday</h4>
+                  <p>Weekly bake drops open online. Browse treats and reserve your order.</p>
+                </div>
+              </div>
+              <div class="pickup-step-item">
+                <span class="pickup-step-num">2</span>
+                <div class="pickup-step-info">
+                  <h4>Wednesday at 6:00 PM</h4>
+                  <p>Order cutoff. Nicole feeds "Mabel" and begins mixing the weekend doughs.</p>
+                </div>
+              </div>
+              <div class="pickup-step-item">
+                <span class="pickup-step-num">3</span>
+                <div class="pickup-step-info">
+                  <h4>Friday (2 PM – 6 PM) & Saturday (9 AM – 1 PM)</h4>
+                  <p>Baked fresh at sunrise and packaged in paper bags on our shaded porch in Merrick, NY.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="background-color: var(--bg-gold-tint); border-radius: 14px; border: 1px solid var(--border-soft); padding: 32px;">
+            <h3 style="font-family: var(--font-serif); font-size: 1.3rem; color: var(--text-dark); margin-bottom: 12px;">Porch Location & Payment</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px;">
+              Our porch pickup is located on a quiet residential street in Merrick, Long Island (11566). You will receive the exact street address upon reservation.
+            </p>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 24px;">
+              As a boutique home cottage bakery, payment is collected conveniently via <strong>Venmo</strong> (@Nicole-Crites), <strong>Zelle</strong>, or cash in our porch drop-box at pickup.
+            </p>
+            <a href="#menu" class="btn-warm" style="width: 100%;">Reserve This Weekend’s Bakes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY REVIEWS -->
+    <section class="community-section">
+      <div class="container">
+        <div style="text-align: center; max-width: 500px; margin: 0 auto 44px;">
+          <span class="eyebrow">Local Love</span>
+          <h2 class="heading-section">From Merrick Families</h2>
+        </div>
+
+        <div class="quotes-grid">
+          <div class="quote-card">
+            <p class="quote-card-text">
+              “The Buttermilk Sourdough has replaced grocery store bread in our house forever. My toddler devours it with butter, and knowing there's zero seed oils gives me so much peace of mind.”
+            </p>
+            <div class="quote-author">Jessica M. • Merrick, NY</div>
+          </div>
+
+          <div class="quote-card">
+            <p class="quote-card-text">
+              “Her strawberry toaster pastries made me so nostalgic! Flaky, buttery, real fruit flavor, and none of that artificial chemical sweetness from the supermarket boxes.”
+            </p>
+            <div class="quote-author">Danielle K. • Bellmore, NY</div>
+          </div>
+
+          <div class="quote-card">
+            <p class="quote-card-text">
+              “I took Nicole's beginner sourdough workshop and it was worth every penny. She made the whole starter process so friendly and approachable. We now have warm bread every Saturday!”
+            </p>
+            <div class="quote-author">Rachel S. • Wantagh, NY</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-artisan">
+    <div class="container">
+      <div class="footer-top-row">
+        <div class="footer-brand-box">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+            <img src="images/logo.png" alt="Merrick Mama Bakes Logo" style="width: 44px; height: 44px; border-radius: 50%;">
+            <span class="footer-brand-title">Merrick Mama Bakes</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            Small-batch, slow-fermented artisan sourdough breads, nostalgic treats, and hands-on workshops in Merrick, Long Island, NY.
+          </p>
+        </div>
+
+        <div class="footer-links-box">
+          <a href="#menu">Menu</a>
+          <a href="#buttermilk">Buttermilk Loaf</a>
+          <a href="#workshops">Workshops</a>
+          <a href="#philosophy">Our Sourdough</a>
+          <a href="#pickup">Porch Pickup</a>
+        </div>
+
+        <div>
+          <div style="font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-gold); font-weight: 700; margin-bottom: 6px;">Questions & Inquiries</div>
+          <a href="mailto:nicoleycrites@hotmail.com" class="footer-contact-link">nicoleycrites@hotmail.com</a>
+          <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 4px;">
+            <a href="https://www.facebook.com/people/Merrick-Mama-Bakes/61568819002395/" target="_blank" rel="noopener noreferrer">Facebook: Merrick Mama Bakes</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-line">
+        <span>© 2026 Merrick Mama Bakes • Made by a mama for your family • Merrick, NY 11566</span>
+        <span>Baked in a home kitchen under NY Cottage Food Operation Guidelines</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BREAD BAG (MINIMALIST SLIDE-OVER) -->
+  <div class="cart-backdrop" id="cart-drawer-backdrop" aria-hidden="true">
+    <aside class="cart-drawer" role="dialog" aria-label="Bread Bag">
+      <div class="cart-head">
+        <h2>Your Bread Bag</h2>
+        <button class="cart-close-x" id="cart-close" aria-label="Close">✕</button>
+      </div>
+
+      <div style="padding: 14px 28px; background-color: var(--bg-gold-tint); border-bottom: 1px solid var(--border-soft);">
+        <label style="display: block; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; color: var(--text-muted); margin-bottom: 4px;">
+          Choose Your Pickup Window:
+        </label>
+        <select id="bag-pickup-select" style="width: 100%; padding: 8px 10px; background: #FFFFFF; border: 1px solid var(--border-soft); border-radius: 6px; font-size: 0.86rem; color: var(--text-dark);">
+          <option value="Friday Porch Pickup (Merrick, NY — 2 PM - 6 PM)">Friday Porch Pickup (2:00 PM – 6:00 PM)</option>
+          <option value="Saturday Morning Pickup (Merrick, NY — 9 AM - 1 PM)">Saturday Morning Pickup (9:00 AM – 1:00 PM)</option>
+          <option value="Local Merrick Home Drop-Off (Orders $45+)">Local Merrick Home Porch Delivery</option>
+        </select>
+      </div>
+
+      <div class="cart-items-scroll" id="bag-items-list">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <div class="cart-foot">
+        <textarea id="bag-notes" style="width: 100%; height: 50px; padding: 8px 12px; border: 1px solid var(--border-soft); border-radius: 8px; font-size: 0.82rem; margin-bottom: 14px; resize: none;" placeholder="Special notes (e.g. slicing preferences, allergy notes)..."></textarea>
+        
+        <div class="cart-foot-total">
+          <span>Estimated Total:</span>
+          <span id="bag-total-amount">$0.00</span>
+        </div>
+
+        <button class="btn-warm" id="bag-order-btn" style="width: 100%;">
+          Generate Order Ticket →
+        </button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- PRODUCT DETAILS MODAL -->
+  <div class="modal-overlay" id="product-modal">
+    <div class="modal-sheet">
+      <button class="modal-close-corner" onclick="closeDetailsModal()">✕</button>
+      <div id="product-modal-inner">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- WORKSHOP REGISTRATION MODAL -->
+  <div class="modal-overlay" id="workshop-modal">
+    <div class="modal-sheet">
+      <button class="modal-close-corner" onclick="closeWorkshopBooking()">✕</button>
+      <div id="workshop-modal-inner">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ORDER TICKET CONFIRMATION MODAL -->
+  <div class="modal-overlay" id="ticket-modal">
+    <div class="modal-sheet">
+      <button class="modal-close-corner" onclick="closeTicketModal()">✕</button>
+      <div id="ticket-modal-inner">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CUSTOM INQUIRY MODAL -->
+  <div class="modal-overlay" id="inquiry-modal">
+    <div class="modal-sheet" style="padding: 36px;">
+      <button class="modal-close-corner" onclick="closeInquiryModal()">✕</button>
+      <span class="eyebrow">Bespoke Bakes</span>
+      <h2 style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--text-dark); margin-bottom: 6px;">Custom Celebration Inquiry</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 24px;">Baby showers, birthday breakfasts, teacher appreciation, and family brunch spreads.</p>
+      
+      <form onsubmit="handleInquirySubmit(event)">
+        <div style="margin-bottom: 16px;">
+          <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; margin-bottom: 4px;">Your Name *</label>
+          <input type="text" id="inq-name" required style="width: 100%; padding: 10px 14px; border: 1px solid var(--border-soft); border-radius: 8px;">
+        </div>
+        <div style="margin-bottom: 16px;">
+          <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; margin-bottom: 4px;">Email Address *</label>
+          <input type="email" id="inq-email" required style="width: 100%; padding: 10px 14px; border: 1px solid var(--border-soft); border-radius: 8px;">
+        </div>
+        <div style="margin-bottom: 16px;">
+          <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; margin-bottom: 4px;">Event Date & Gathering Type</label>
+          <input type="text" id="inq-event" placeholder="e.g. Baby Shower Brunch on Nov 15" required style="width: 100%; padding: 10px 14px; border: 1px solid var(--border-soft); border-radius: 8px;">
+        </div>
+        <div style="margin-bottom: 22px;">
+          <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; margin-bottom: 4px;">What treats are you dreaming of?</label>
+          <textarea id="inq-notes" rows="3" placeholder="e.g. 2 dozen mini strawberry toaster pastries, a cinnamon roll skillet, and 2 sliced buttermilk loaves..." required style="width: 100%; padding: 10px 14px; border: 1px solid var(--border-soft); border-radius: 8px;"></textarea>
+        </div>
+        <button type="submit" class="btn-warm" style="width: 100%;">Send Inquiry to Nicole</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST MESSAGE -->
+  <div class="toast-msg" id="toast-message"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
